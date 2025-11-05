@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>NailArt Studio - Запись</title>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav style="background: #ffebee; padding: 15px; text-align: center; border-bottom: 2px solid #f8bbd0;">
+        <a href="index.html" style="color: #d81b60; margin: 0 15px;">Главная</a> | 
+        <a href="services.html" style="color: #d81b60; margin: 0 15px;">Услуги</a> | 
+        <a href="gallery.html" style="color: #d81b60; margin: 0 15px;">Галерея</a> | 
+        <a href="prices.html" style="color: #d81b60; margin: 0 15px;">Цены</a> | 
+        <a href="contacts.html" style="color: #d81b60; margin: 0 15px;">Контакты</a> | 
+        <a href="appointment.html" style="color: #d81b60; font-weight: bold; margin: 0 15px;">Запись</a> |
+        <a href="https://wa.me" target="_blank" style="color: #d81b60; margin: 0 15px;">WhatsApp</a>
+    </nav>
+
+    <h1>Онлайн запись</h1>
+
+    <!-- Форма заказа услуг -->
+    <form action="https://www.bing.com/search?" method="post" target="_blank">
+        <h3>Форма заказа услуг</h3>
+        
+        <input type="hidden" name="service_type" value="nail_service">
+        
+        <p><strong>Ваше имя:</strong><br>
+        <input type="text" name="client_name" value="Анастасия"></p> 
+        
+        <p><strong>Выберите услугу:</strong><br>
+        <input type="radio" name="service" value="manicure" checked> Маникюр<br>
+        <input type="radio" name="service" value="pedicure"> Педикюр<br>
+        <input type="radio" name="service" value="both"> Комплекс</p>
+        
+        <p><strong>Тип маникюра:</strong><br>
+        <input type="checkbox" name="manicure_type" value="apparatus"> Аппаратный<br>
+        <input type="checkbox" name="manicure_type" value="combined"checked> Комбинированный<br>
+        <input type="checkbox" name="manicure_type" value="european"> Европейский</p>
+        
+        <p><strong>Количество ногтей для дизайна:</strong><br>
+        <input type="number" name="design_nails" min="1" max="20" value="10"></p>
+        
+        <p><strong>Дата визита:</strong><br>
+        <input type="date" name="visit_date" value="05.11.2025"></p>
+        
+        <p><strong>Время:</strong><br>
+        <input type="time" name="visit_time" value="14:00"></p>
+        
+        <p><strong>Пароль для изменения записи:</strong><br>
+        <input type="password" name="edit_password" value="1111"></p>
+        
+        <p><strong>Комментарий к заказу:</strong><br>
+        <textarea name="comments" rows="4" cols="50" value="привет"></textarea></p>
+        
+        <p><input type="submit" value="Записаться"></p>
+    </form>
+
+    <h3>Популярные услуги:</h3>
+    <ol>
+        <li>Гель-лак покрытие</li>
+        <li>Аппаратный маникюр</li>
+        <li>Френч дизайн</li>
+        <li>SPA-уход</li>
+    </ol>
+</body>
+</html>
